@@ -3,7 +3,7 @@ $(document).ready(function(){
 	  var coords = getLongLat(res.loc.split(","));
 	  var city = res.city;
 	  var state = res.region;
-	  $.getJSON("http://api.openweathermap.org/data/2.5/weather?&units=metric&APPID=814e06dd45ca687df300f5b1a4896b25&lat="+coords.lat+"&lon="+coords.long, function(data){
+	  $.getJSON("http://api.openweathermap.org/data/2.5/weather?&units=metric&APPID=APIKEYHERE&lat="+coords.lat+"&lon="+coords.long, function(data){
 	  	var icon = data.weather[0].icon;
 	  	console.log(data);
 	  	$('#display').fadeOut(function() {
